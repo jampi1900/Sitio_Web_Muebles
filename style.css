@@ -9,8 +9,9 @@
     list-style: none;
 }
  body {
-
+    
     font-family: "Poppins", sans-serif;
+    
 }
 
 img {
@@ -19,18 +20,19 @@ img {
 
 .container {
     max-width :1200px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .header {
     display:flex;
     align-items:center;
-    min-height:80vh;
+    min-height: 80vh;
     background: linear-gradient(90deg,
     rgba(241,237,220,1)0%,
     rgba(255,255,253,1)50%,
     rgba(252,246,232,1)100%);
     padding : 70px 0px;
+    
 }
 
 .menu {
@@ -41,6 +43,7 @@ img {
   display:flex;
   align-items: center;
   justify-content:space-between;
+  
 }
 
 .logo {
@@ -72,7 +75,7 @@ img {
     display:none;
  }
 
- .menu-icono {
+.menu-icono {
     width:25px;
  }
 
@@ -119,7 +122,7 @@ th , td {
     cursor: pointer;
 }
 
-.header-conten {
+.header-content {
     display: flex;
     align-items: center;
     flex: 1;
@@ -242,7 +245,7 @@ text-transform: uppercase;
     margin-bottom: 20px;
  }
 
- .bot-2{
+ .btn-2{
     display: inline-block;
     padding: 8px 30px;
     border: 1px solid #FFFFFF;
@@ -250,7 +253,7 @@ text-transform: uppercase;
  }
 
  .promotion {
-    padding:80px 0;
+    padding: 80px 80px;
     background-color: #F7F7F7;
  }
 
@@ -282,3 +285,193 @@ text-transform: uppercase;
     gap: 30px;
     margin-bottom: 50px;
  }
+
+
+ .blog {
+    padding: 50px 0px 100px 0px;
+ }
+
+ .blog-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+ }
+
+ .blog-1 {
+    flex-basis: calc(33.3% -30px);
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+ }
+
+ .blog-txt {
+    padding:40px;
+ }
+
+ .blog-1:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+ }
+
+ .btn-4 {
+    display: inline-block;
+    border : 1px solid #181818;
+    padding: 8px 25px;
+    font-size:17px;
+    text-transform: capitalize;
+    color: #181818;
+ }
+
+ .btn-4:hover{
+    background-color: #181818;
+    color:#F7F7F7;
+ }
+
+ .footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .link h3 {
+    font-size:17px;
+    color: #181818;
+    margin-bottom:10px;
+ }
+
+ .link a {
+    font-size:17px;
+    color:#181818;
+    display: block;
+    margin-bottom: 10px;
+ }
+
+ .link a:hover {
+    color :#FF3C2A
+ }
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+   
+    }
+     .menu{
+        padding:20px;
+     }
+
+     .menu label {
+        display: initial;
+
+     }
+
+     .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background-color: #FF9000;
+        display: none;
+     }
+
+     .menu .navbar ul li {
+        width: 100%;
+     }
+
+     #menu:checked ~ .navbar{
+        display: initial;
+     }
+     .logo {
+        display: none;
+     }
+
+     .menu .navbar ul li a:hover{
+        color: #F7FAFA;
+     }
+
+     .header {
+        min-height: 0vh;
+        padding: 100px 30px 50px 30px;
+        width: 100%;
+        overflow: hidden; /* O ajusta según tus necesidades */
+        
+
+        
+     }
+
+     .header-content{
+        flex-direction: column;
+        text-align: center;
+     }
+
+     .header-txt {
+        margin-bottom:25px;
+     }
+
+     .oferts {
+        padding:30px;
+     }
+
+     .oferts-content{
+        flex-direction: column;
+     }
+
+     .ofert-1 {
+        margin-bottom:30px;
+     }
+
+     .logan-1{
+        order:-2;
+        margin-bottom: 30px;
+     }
+
+     .promotion{
+        padding: 30px;
+     }
+
+     .promotion-content{
+        flex-direction: column;
+        text-align: center;
+
+     }
+
+     .promotion-txt{
+        margin-bottom: 25px;
+     }
+
+     .promotion-img img{
+        width:200px;
+     }
+
+     .product {
+        padding: 30px;
+     }
+
+     .product-content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+     }
+
+     .blog {
+        padding: 30px;
+     }
+
+     .blog-content {
+        flex-direction: column;
+     }
+
+     .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+     }
+}
