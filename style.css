@@ -248,3 +248,37 @@ text-transform: uppercase;
     border: 1px solid #FFFFFF;
     color:#FFFFFF; 
  }
+
+ .promotion {
+    padding:80px 0;
+    background-color: #F7F7F7;
+ }
+
+ .promotion-content {
+    display:flex;
+ }
+
+ .promotion-txt{
+    flex-basis : 50%;
+ }
+
+ .promotion-img{
+    flex-basis: 50%;
+    text-align: center;
+ }
+
+ .promotion-img img {
+    width:250px;
+ }
+
+ .product {
+    padding: 100px 0;
+    text-align:center;
+ }
+
+ .product-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+ }
